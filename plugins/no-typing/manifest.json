@@ -5,6 +5,10 @@
     {
       "name": "redstonekasi",
       "id": "265064055490871297"
+    },
+    {
+      "name": "davilarek",
+      "id": "568109529884000260"
     }
   ],
   "main": "src/index.ts",
