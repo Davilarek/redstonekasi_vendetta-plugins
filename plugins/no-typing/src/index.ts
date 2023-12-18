@@ -8,7 +8,6 @@ import { NoTypingIcon } from "./icon";
 const ChatInput = findByName("ChatInput");
 const Typing = findByProps("startTyping");
 const patches = ["startTyping"].map((k) => instead(k, Typing, ([channelId]) => {
-    console.log("channelId:", channelId);
     if (storage.noTyping_enabled) return;
     FluxDispatcher.dispatch({ type: "TYPING_START_LOCAL", channelId });
 }));
